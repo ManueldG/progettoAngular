@@ -1,4 +1,4 @@
-# Ex2
+# Progetto Angular
 
 navbar logo login
 
