@@ -1,6 +1,7 @@
 import { Component,Input,inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Observable,from } from 'rxjs';
+import { RouterLink, RouterOutlet ,RouterLinkActive} from '@angular/router';
 
 import { Categorie } from '../../categorie';
 import { CategorieService } from '../../categorie.service';
@@ -12,7 +13,7 @@ import { Alunni } from '../../alunni';
 @Component({
   selector: 'app-card',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,RouterLinkActive,RouterOutlet,RouterLink],
   templateUrl: './card.component.html',
   styleUrl: './card.component.css'
 })

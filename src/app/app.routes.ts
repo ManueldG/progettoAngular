@@ -1,9 +1,8 @@
 import { Routes } from '@angular/router';
 import { AppComponent } from './app.component';
-import { CardsComponent } from './cards/cards.component';
-
+import { ListaComponent } from './lista/lista.component';
 export const routes: Routes = [
 
-  { path: 'card/:id', component: CardsComponent },
+  { path: 'list/:id', component: ListaComponent },
 ];
 

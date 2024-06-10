@@ -13,9 +13,10 @@
         @if (istituti?.categoria == alunno.scuola) {
 
           <li>
-            <a href="">{{ alunno.firstName }} {{ alunno.lastName }}</a>
+            <a [routerLink]="['/list',alunno.id]" routerLinkActive="active" ariaCurrentWhenActive="page">{{ alunno.firstName }} {{ alunno.lastName }}</a>
           </li>
 
+        <router-outlet ></router-outlet>
         }
 
       </ul>
