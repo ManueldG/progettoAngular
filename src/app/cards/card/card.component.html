@@ -1,0 +1,26 @@
+<div class="card" style="width: 18rem;">
+
+
+
+  <div class="card-body">
+
+    <h5 class="card-title">{{ cat.titolo }} {{ istituti?.titolo }}</h5>
+
+    <p class="card-text">{{ cat.descrizione }}</p>
+
+      <ul  *ngFor=" let alunno of alunni" >
+
+        @if (istituti?.categoria == alunno.scuola) {
+
+          <li>
+            <a href="">{{ alunno.firstName }} {{ alunno.lastName }}</a>
+          </li>
+
+        }
+
+      </ul>
+
+    <a href="#" class="btn btn-primary">Go somewhere </a>
+
+  </div>
+</div>
